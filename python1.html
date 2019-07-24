@@ -1,0 +1,127 @@
+print('hello world!')
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/head.css" />
+		<link rel="stylesheet" type="text/css" href="css/bottom.css" />
+		<link rel="stylesheet" type="text/css" href="css/register.css" />
+	</head>
+	<body>
+		<!-- 头部 -->
+		<div class="mainHead">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td>
+						<img src="images/logo.jpg" alt="logo">
+					</td align="right">
+					<td>
+						<img src="images/phone.jpg" alt="phone">
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<!-- 导航条 -->
+		<ul id="navigation" class="mainNavigation">
+			<li class="move"><a href="index.html" style="background: #25ABFF;" target="_blank">首页</a></li>
+			<li><a href="test.html" target="_blank">机构</a></li>
+			<li><a href="test.html" target="_blank">少儿英语</a></li>
+			<li><a href="test.html" target="_blank">成人英语</a></li>
+			<li><a href="test.html" target="_blank">托福雅思</a></li>
+			<li><a href="test.html" target="_blank">英语四级</a></li>
+			<li><a href="test.html" target="_blank">英语六级</a></li>
+			<div class="clearFloat"></div>
+		</ul>
+		<form id = "myform" action="test.html" method="get">
+
+
+			<div class="r_mainFrame">
+				<div style="border:grey 1px solid;overflow: hidden;">
+					<div class="r_leftdiv">
+						<div>名字：</div>
+						<div>姓氏：</div>
+						<div>登录名：</div>
+						<div>密码：</div>
+						<div>再次输入密码：</div>
+						<div>电子邮箱：</div>
+						<div>性别：</div>
+						<div>爱好：</div>
+						<div>出生日期：</div>
+						<div><input type="reset" value="重填"></div>
+					</div>
+					<div class="r_rightdiv">
+						<div>
+							<input type="text" name="usename" onblur="checkusename()"><span id="usenameflag"></span>
+						</div>
+						<div>
+							<input type="text" name="familyname" onblur="checkfamilyname()"><span id="familynameflag"></span>
+						</div>
+						<div>
+							<input type="text" name="loginname" onblur="checkloginname()">&nbsp;&nbsp;  <span id="loginnameflag" >(可包含a-z,0-9和下划线)</span>
+						</div>
+						<div>
+							<input type="password" name="password1" onblur="checkpassword()">&nbsp;&nbsp;<span id="password1flag">(可包含数字下划线和减号)</span>
+						</div>
+						<div>
+							<input type="password" name="password2" onblur="checktwopassword()"><span id="password2flag" ></span>
+						</div>
+						<div>
+							<input type="text" name="email" onblur="checkemail()">&nbsp;&nbsp;<span id="emailflag">(必须包含@字符)</span>
+						</div>
+						<div>
+							<input type="radio" name="male" value="0" checked="checked"><img src="images/Male.gif" width="20px" height="20px" >男
+							<input type="radio" name="male" id="" value="1" /><img src="images/Female.gif" width="20px" height="20px" />女
+						</div>
+						<div>
+							<input type="checkbox" name="sports" id="" value="1" />运动
+							<input type="checkbox" name="sports" id="" value="2" />聊天
+							<input type="checkbox" name="sports" id="" value="3" />玩游戏
+						</div>
+						<div>
+							<select id="year" onclick="setDays()">
+
+							</select>&nbsp;年
+							<select id="month" onclick="setDays()">
+
+							</select>&nbsp;月
+							<select id="days">
+
+							</select>&nbsp;日
+						</div>
+						<div>
+							<button type="submit" onclick="return checkform()">&nbsp;&nbsp;同意以下条款提交注册信息&nbsp;&nbsp;</button>
+
+						</div>
+					</div>
+					<div class="clearFloat"></div>
+				</div>
+				
+				
+				<div class="r_enddiv">
+					<h2><img src="images/read.gif" width="30px" height="30px"/>阅读爱英语网学习服务</h2>
+							<textarea rows="15" cols="100" readonly="readonly" style="resize: none;"/>
+欢迎阅读服务条款协议，本协议阐述之条款和条件适用于您使用网站提供的各种工具和服务。 
+一、本服务协议双方为『超级码头』和『超级码头』用户，本服务协议具有合同效力 
+本服务协议内容包括协议正文及所有『超级码头』已经发布的或将来可能发布的各类规则。所有规则为协议不可分割的一部分，与协议正文具有同等法律效力。 
+用户在使用『超级码头』提供的各项服务的同时，承诺接受并遵守各项相关规则的规定。『超级码头』有权根据需要，不定时的制定、修改本协议或各类规则，如本协议有任何变更，『超级码头』将在网站上刊载公告，通知用户。如用户不同意相关变更，必须停止使用『超级码头』提供的“服务”。经修订的协议一经在『超级码头』公布后，立即自动生效。各类规则会在发布后生效，亦成为本协议的一部分。登录或继续使用『超级码头』“服务”将表示用户接受经修订的协议。 
+您确认本服务协议后，本服务协议即在您和『超级码头』之间产生法律效力。请您务必在注册之前认真阅读全部服务协议内容，如有任何疑问，可向『超级码头』咨询。 
+无论您事实上是否在注册之前认真阅读了本服务协议，只要您点击协议正本下方的“确认”按钮，并按照『超级码头』注册程序成功注册为用户，您的行为仍然表示您同意并签署了本服务协议。 
+本协议不涉及您与『超级码头』其它用户之间，因积分兑换网站商品和服务而产生的法律关系及法律纠纷。
+二、定义及其一般规定 
+超级码头』用户及用户注册 
+用户必须是具备完全民事行为能力的自然人，或者是具有合法经营资格的实体组织。 
+无民事行为能力人、限制民事行为能力人不能注册为『超级码头』会员，与『超级码头』之间的服务协议自始无效，『超级码头』一经发现，有权立即注销该用户。 
+用户注册是指用户登录『超级码头』，并按要求填写相关信息并确认相关用户协议的过程。
+							</textarea>
+				</div>
+				
+			</div>
+		</form>
+
+		<div class="mybottom">苏ICP备0800111号</div>
+		
+		<script type="text/javascript" src="js/register.js"></script>
+	</body>
+</html>
